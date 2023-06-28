@@ -1,24 +1,20 @@
+//var n = 15
 
-//var numero = 4
-
-//for(var i = 10; i <= numero; i++){
-
-//        console.log('executando o for pela '+ i + ' vez')
-//} 
-
+//for (var  j = 10; j < n; j++){
+  // console.log('repetindo pela ' + j + 'vez')
+//}
 //console.log('acabou')
 
 
+var n = Math.random() * 100
+while(n < 90){
 
-
- var numero = Math.random() *100
- 
- while (numero < 90) {
-    console.log(numero)
-     numero = Math.random() *100
-    
+   console.log(n)
+   n++
+  
 }
 
-console.log(numero)
-console.log('ACABOU')
+console.log('acabou')
+console.log(n)
+
 
