@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Eventos prt - 2
+    </title>
+
+    <style>
+        img{
+            width: 200px;
+            margin-bottom: 25px;
+        }
+
+        div{
+            background-color:rgb(24, 102, 185) ;
+            font-size: 2.4em;
+            border-radius: 15px;
+            padding: 10px;
+            color: white;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+
+<body onload="console.log('pagina completamente carregada')">
+
+       <img src="img/game.jpg" alt="controle-video-game">
+       <br>
+       <div onmouseover="imagemIN(this)" onmouseout="imagemUT(this)">click</div>
+
+       <script src="script.js"></script>
+
+</body>
+
+</html>
