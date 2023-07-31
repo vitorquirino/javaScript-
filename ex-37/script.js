@@ -1,22 +1,18 @@
 let a = {
-            nome:'vitor',
-            nota:  8.5       
-        }
+    nome: "igor",
+    nota: 8.5
+}
 
-let b = JSON.stringify(a)   
+let b = JSON.stringify(a)
 
-console.log(a)        
-console.log(b)  
-
-
-
-let a2 = '{"nome":"léo", "nota":7.8}'
+let a2 = '{"nome":"fabio", "nota":7.8}'
 
 let b2 = JSON.parse(a2)
 
+console.log(a)
+console.log(b)
+
 console.log(a2)
 console.log(b2)
-       
-console.log(b2.nota)
 
-       
+console.log(b2.nota)
