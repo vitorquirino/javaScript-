@@ -1,17 +1,12 @@
+let ps = ["vitor","regina","jose","sandra","vitoria"]
 
-var alunos = ["regina","vitor","igor","sandra","jose","leo","ivo","joao"]
+function sortear(){
+    let np = ps.length 
 
-for (var aluno of  alunos){
-    console.log(aluno)
+    let ns = Math.floor(Math.random( ) * np)
+    document.getElementById('d').innerHTML = ps[ns]
+   
 }
-
-
-
-
-
-
-
-
 
 
 
