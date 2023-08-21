@@ -4,13 +4,13 @@
     padding:20px ;
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(12, 134, 95, 0.486);
+    background-color: rgba(2, 84, 57, 0.992);
 }
 
 input{
     display: block;
     width: 100%;
-    padding: 4px;
+    padding: 5px;
     margin-bottom: 8px;
     box-sizing: border-box;
     
@@ -21,4 +21,9 @@ h1{
     color: white;
     text-align: center;
     font-size: 40px;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
 }
