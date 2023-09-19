@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Comparando as maneiras de criar um evento
+        Elementos pai e filhos
     </title>
 
     <style>
@@ -12,31 +12,36 @@
     </style>
 
     <script>
-        function f(e){
-            console.log("teste f")
-            console.log(e)
-        }
-
-        function f1(e){
-            console.log("teste f1")
-            console.log(e)
-            console.log(e.target)
-        }
-
+        
         window.onload = function(){
-            let h1 = document.getElementsByTagName('h1')[0]
+            let h1 = document.getElementsByTagName('h1')
 
-            h1.addEventListener('click', f1)
+            for(h of h1){
+                console.log(h)
+                h.addEventListener("click",qop)
+            }
+
+            function qop(e){
+                let t = e.target
+                console.log(t.parentElement)
+            }
         }
-
-
+    
 
     </script>
 </head>
 
 <body>
 
-    <h1 onclick="f(this)">title</h1>
+    <div id="d1">
+        <h1>title</h1>
+        <p>qualquer texto</p>
+    </div>
+
+    <div id="d2">
+        <h1>title 2</h1>
+        <p>qualquer texto 2</p>
+    </div>
     
 </body>
 </html>
