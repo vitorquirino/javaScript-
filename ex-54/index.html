@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+    <script>
+
+        let a = {
+            nome:"vitor",
+            nota: 9.6
+        }
+        console.log(a)
+
+        let b = JSON.stringify(a)
+        console.log(b)
+
+
+
+        let a2 = '{"nome":"fabio", "nota":7.8}'
+        console.log(a2)
+        
+
+
+        let b2 = JSON.parse(a2)
+        console.log(b2)
+        console.log(b2.nota)
+
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
