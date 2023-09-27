@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array - localstrorage</title>
+    <style>
+        #d {
+        width: 500px;
+        min-height: 100px;
+        border: 1px dashed black;
+        }
+     </style>
+    <script>
+         var arr = [];
+ 
+ function addItem(){
+    if (localStorage.meuArr){             
+       arr = JSON.parse(localStorage.getItem('meuArr')); 
+    }
+    
+    let novoItem = document.getElementById("v").value;
+    arr.push(novoItem);
+    document.getElementById("v").value = "";
+    localStorage.meuArr = JSON.stringify(arr);
+ }
+
+ function showItems(){
+    let resultDIV = document.getElementById('d');
+    resultDIV.innerHTML = "";
+    if (localStorage.meuArr){             
+       arr = JSON.parse(localStorage.getItem('meuArr')); 
+    }
+    
+    for(var i in arr){
+       let p = document.createElement("p");
+       p.innerHTML = arr[i];
+       resultDIV.append(p);
+    }
+ }
+
+ function clearItems(){
+    arr = [];
+    localStorage.meuArr = JSON.stringify(arr);   
+ }
+    </script>
+</head>
+
+<body>
+    <h3>Array com JavaScript</h3>
+   <label>Informe valor: </label>
+   <input id="v" /><br>
+   <button onclick="addItem()">Add</button><br>
+   <button onclick="showItems()">Show</button><br>
+   <button onclick="clearItems()">Clear</button><br>
+   <div id="d"></div>
+
+   
+</body>
+</html>
